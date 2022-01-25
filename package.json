@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mawiedev/Bot-discord.git"
+    "url": "git+https://github.com/airmes/Bot-discord.git"
   },
   "keywords": [
     "discord",
@@ -21,9 +21,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Mawiedev/Bot-discord/issues"
+    "url": "https://github.com/airmes/Bot-discord/issues"
   },
-  "homepage": "https://github.com/Mawiedev/Bot-discord#readme",
+  "homepage": "https://github.com/airmes/Bot-discord#readme",
   "dependencies": {
     "discord.js": "^12.5.3",
     "dotenv": "^10.0.0"
