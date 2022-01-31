@@ -1,5 +1,5 @@
 module.exports = (channel) => {
-    const imgUrl = 'https://i.ibb.co/C79WMKx/juifoupasjuif-copie.png';
+    const imgUrl = 'https://i.ibb.co/R4hn4km/Dripoupasdrip.png';
     
     channel.send({files: [imgUrl]}).then(message => {
         message.react('👍');

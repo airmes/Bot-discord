@@ -19,7 +19,9 @@ module.exports = (client, msg) => {
         const mapping = {
             juif: () => commands.juif(msg.channel),
         };
-
+        const mapping = {
+            benjadrip: () => commands.benjadrip(msg.channel),
+        };
         // Handle any bug in commands
         try {
             if (command in mapping) return mapping[command](message);
