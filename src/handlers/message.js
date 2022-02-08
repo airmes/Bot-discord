@@ -18,9 +18,8 @@ module.exports = (client, msg) => {
         // All commands here
         const mapping = {
             juif: () => commands.juif(msg.channel),
-        };
-        const mapping = {
-            benjadrip: () => commands.benjadrip(msg.channel),
+            drip: () => commands.drip(msg.channel),
+            gay: () => commands.gay(msg.channel),
         };
         // Handle any bug in commands
         try {
