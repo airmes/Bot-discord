@@ -5,7 +5,7 @@ const {errorMessage} = require('../../data');
 module.exports = (client, msg) => {
     const words = msg.content.split(' ');
     const command = words.shift().substr(1).toLowerCase();
-    const message = words.join(' ');
+    const text = words.join(' ');
 
     if (msg.author.bot) return;
     if (command.length === 0) return;
@@ -17,13 +17,13 @@ module.exports = (client, msg) => {
     if (msg.channel.type === 'text' && msg.content[0] == '!') {
         // All commands here
         const mapping = {
-            juif: () => commands.juif(msg.channel),
-            drip: () => commands.drip(msg.channel),
-            gay: () => commands.gay(msg.channel),
+            juif: (text) => commands.juif(msg.channel, text),
+            drip: (text) => commands.drip(msg.channel, text),
+            gay : (text) => commands.gay(msg.channel, text),
         };
         // Handle any bug in commands
         try {
-            if (command in mapping) return mapping[command](message);
+            if (command in mapping) return mapping[command](text);
         } catch (error) {
             console.log(error);
             return tryToSend(msg.channel, errorMessage);
