@@ -1,5 +1,6 @@
 module.exports = {
-    juif: require('./juif'),
     drip: require('./drip'),
     gay : require('./gay'),
+    hot : require('./hot'),
+    juif: require('./juif'),
 };
